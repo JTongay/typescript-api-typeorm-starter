@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "lib": ["dom", "es2017"],
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "generator",
+    "dist"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "files": [
+    "src/index.ts"
+  ]
+}

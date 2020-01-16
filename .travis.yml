@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 10
+env:
+  process.env.NODE_ENV = 'ci'
+services:
+  mongodb
+before_script:
+  - sleep 15
+  - npm install -g codecov
+script:
+  - npm run ci
+  - codecov -t process.env.CODECOV_TOKEN
